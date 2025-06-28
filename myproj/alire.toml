@@ -1,0 +1,12 @@
+name = "myproj"
+description = "A test project"
+version = "0.1.0-dev"
+
+authors = ["Michal Moudrý"]
+maintainers = ["Michal Moudrý <example@example.com>"]
+maintainers-logins = ["MichalMoudry"]
+licenses = "MIT"
+website = ""
+tags = []
+
+executables = ["myproj"]
