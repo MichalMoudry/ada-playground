@@ -1,0 +1,10 @@
+name = "subprograms"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Michal Moudrý"]
+maintainers = ["Michal Moudrý <test@test.com>"]
+maintainers-logins = ["MichalMoudry"]
+licenses = "MIT"
+website = ""
+tags = []

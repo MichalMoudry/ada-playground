@@ -1,0 +1,1 @@
+procedure Swap (A, B : in out Integer);

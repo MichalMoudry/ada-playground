@@ -1,5 +1,6 @@
 with Ada.Text_IO;
 with Ada.Integer_Text_IO;
+with Ada.Calendar;
 with Increment;
 
 procedure Myproj is
@@ -19,8 +20,18 @@ procedure Myproj is
    begin
       return X * Y;
    end Multiply;
+
+   function To_Holocene_Year (T : Ada.Calendar.Time) return Integer is
+   begin
+      return 0;
+   end To_Holocene_Year;
+
+   HY : Integer;
 --   subtype Alphabet is Character range 'A' .. 'Z';
 begin
+   HY := To_Holocene_Year (Ada.Calendar.Time_Of (2025, 1, 1));
+   Ada.Text_IO.Put_Line ("Holocene year: " & Integer'Image (HY));
+
    loop
       Ada.Text_IO.Put_Line ("Bare loop" & Integer'Image (I));
       exit when I = 5;
