@@ -28,6 +28,9 @@ procedure Subprograms is
       A := 10;
    end Foo;
 
+   function To_Str (I : Integer) return String
+      renames Integer'Image;
+
    Test1 : Integer;
 begin
    X := 1;
@@ -37,7 +40,7 @@ begin
    Put_Line ("");
 
    C := Increment;
-   Put_Line ("Default increment is: " & Integer'Image (C));
+   Put_Line ("Default increment is: " & To_Str (C));
    A := 10;
    B := 3;
    C := Increment (A, B);
@@ -46,8 +49,8 @@ begin
    Swap (A, B);
    Display_Result;
 
-   Put_Line ("Quadruple of 16 is: " & Integer'Image (Quadruple (16)));
+   Put_Line ("Quadruple of 16 is: " & To_Str (Quadruple (16)));
 
    Foo (Test1);
-   Put_Line ("Test1 =" & Integer'Image (Test1));
+   Put_Line ("Test1 =" & To_Str (Test1));
 end Subprograms;
