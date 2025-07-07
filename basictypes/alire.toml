@@ -1,0 +1,10 @@
+name = "basictypes"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Michal Moudrý"]
+maintainers = ["Michal Moudrý <moudr.michal@gmail.com>"]
+maintainers-logins = ["MichalMoudry"]
+licenses = "MIT"
+website = ""
+tags = []

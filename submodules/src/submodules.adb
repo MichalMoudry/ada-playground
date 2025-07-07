@@ -1,6 +1,7 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Week;
 with Operations;
+with Week.Operations;
 
 procedure Submodules is
    use Operations;
@@ -31,4 +32,6 @@ begin
    Display_Update_Values;
    R := Increment_By (I);
    Display_Update_Values;
+
+   Put_Line ("First day of the week is " & Week.Operations.Get_First_Of_Week);
 end Submodules;
